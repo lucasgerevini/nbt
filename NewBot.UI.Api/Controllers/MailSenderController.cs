@@ -10,35 +10,35 @@ namespace NewBot.UI.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class SendSMSController : ControllerBase
+    public class MailSenderController : ControllerBase
     {
-        // GET: api/<SendSMSController>
+        // GET: api/<MailSenderController>
         [HttpGet]
         public IEnumerable<string> Get()
         {
             return new string[] { "value1", "value2" };
         }
 
-        // GET api/<SendSMSController>/5
+        // GET api/<MailSenderController>/5
         [HttpGet("{id}")]
         public string Get(int id)
         {
             return "value";
         }
 
-        // POST api/<SendSMSController>
+        // POST api/<MailSenderController>
         [HttpPost]
         public void Post([FromBody] string value)
         {
         }
 
-        // PUT api/<SendSMSController>/5
+        // PUT api/<MailSenderController>/5
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] string value)
         {
         }
 
-        // DELETE api/<SendSMSController>/5
+        // DELETE api/<MailSenderController>/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
